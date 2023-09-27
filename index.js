@@ -10,9 +10,9 @@ function fillButton(index, text) {
 
 
 function winningAlert(winner) {
-  if(confirm(`Horraaay, ${winner} wins!`)){}
-     // The code here will be exectued if you press on OK button that will pop on the window 
+  if(confirm(`Horraaay, ${winner} wins!`)){
 
+  }
 
   }
 
@@ -30,13 +30,23 @@ function winningAlert(winner) {
  * Add your code here, since this is going to be your main function
  * That interacts with the UI
  */
+// let currentArray = [];
+// console.log(currentArray);
 
+  
+    const winningConditions = [
+      [1,2,3], [4,5,6], [7,8,9],
+      [1,4,7], [2,5,8], [3,6,9],
+      [1,5,9], [3,5,7]
+    ];
+  
+    winningConditions.forEach((checkWinner) => {
+    if (checkWinner)
+   })
 
-const winningConditions = [
-  [1,2,3], [4,5,6], [7,8,9],
-  [1,4,7], [2,5,8], [3,6,9],
-  [1,5,9], [3,5,7]
-  ];
+  //   if(winningConditions == ["X","X","X"] || winningConditions == ["O","O","O"])
+  //  return winningAlert;
+  }
 
   let counter = 0;
 
@@ -50,6 +60,9 @@ if (counter%2 == 0){
 }
 counter++;
 }
+
+
+
 
 /**
  * (Optional) It's always a good idea to make a function for every single purpose.
