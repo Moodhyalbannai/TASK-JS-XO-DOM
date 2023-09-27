@@ -49,8 +49,6 @@ if (counter%2 == 0){
   fillButton(index, `O`)
 }
 counter++;
-
-  
 }
 
 /**
